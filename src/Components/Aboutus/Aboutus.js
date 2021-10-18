@@ -9,31 +9,28 @@ const Aboutus = () => {
             <div>
             <Row>
             <Col>
-               <img src="https://i.pinimg.com/originals/6a/07/45/6a07451631ad1dd24cce8b73ea5fc62b.jpg" alt/>
+               <img className="w-75 mt-5 pt-5" src="https://physiopal.com.au/wp-content/uploads/2021/08/undraw_Stability_ball_b4ia.svg"/>
                 </Col>
-                <Col className="pt-5 mt-5 text-start me-5">
-                <h4 className="about-hader-text">Here You Can Learn Different Type Of Proggramming Language!!!</h4>
+                <Col className=" mt-5 text-start me-5">
+                <h4 className="about-hader-text">Body Light!!!</h4>
+                <p>Yoga is a mind and body practice. Various styles of yoga combine physical postures, breathing techniques, and meditation or relaxation. Yoga is an ancient practice that may have originated in India. It involves movement, meditation, and breathing techniques to promote mental and physical well-being</p>
+                <button className="btn btn-warning rounded-pill px-5 fw-bold">See More</button>
 
            
                 </Col>
             </Row>
             </div>
           <div className="pt-5 mt-5">
-            <h3 className="aboutmore">About More</h3>
+            <h3 className="aboutmore pt-5 mt-5">About More</h3>
             <div className="aboutmore-text">
             <Row>
-                <Col className="pt-5 mt-5 text-start me-5">
-                <h3 className="pt-5 mt-5 pb-3 text">The 5 types of Programming Language that are classified are</h3>
-                <ul>
-                    <li>Procedural Programming Language.</li>
-                    <li>Functional Programming Language.</li>
-                    <li>Scripting Programming Language.</li>
-                    <li>Logic Programming Language.</li>
-                    <li>Object-Oriented Programming Language.</li>
-                </ul>
+                <Col className="text-start me-5">
+                <h3 className="pt-5 mt-5 pb-3 text">Why is gym so important?</h3>
+                  <p className="textline">Regular exercise and physical activity promotes strong muscles and bones. It improves respiratory, cardiovascular health, and overall health. Staying active can also help you maintain a healthy weight, reduce your risk for type 2 diabetes, heart disease, and reduce your risk for some cancers.</p>
+                  <p className="textline">Going to the gym every day can help improve your cardiovascular system, strengthen your muscles, help you maintain your weight, boost your mental health and decrease the odds that you'll develop other health conditions. Exercising daily strengthens your heart and allows it to pump more efficiently with less strain.</p>
                 </Col>
-                <Col className="py-5">
-               <img src="https://i.pinimg.com/originals/4e/27/44/4e2744fcb5f235e6f8883bcc398f2427.png" alt/>
+                <Col className="pb-5">
+               <img className="w-75" src="http://royaltech.com.eg/wp-content/uploads/2020/09/undraw_indoor_bike_pwa4.png"/>
                 </Col>
             </Row>
             </div>

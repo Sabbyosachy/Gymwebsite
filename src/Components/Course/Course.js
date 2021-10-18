@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardGroup } from 'react-bootstrap';
 
 const Course = (props) => {
-  const{coursetitle,image,duration,fee,description}=props.course;
+  const{coursetitle,image,fee,description}=props.course;
     return (
         <div>
            <div>
