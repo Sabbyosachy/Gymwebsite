@@ -59,20 +59,24 @@ const Home = () => {
   </Carousel.Item>
 </Carousel>
         </div>
-             <h2 className="py-5 services-title">Our Services</h2>
-
+             <h2 className=" pt-5 services-title fw-bold">Learn New</h2>
              <div>
-               
-             <div className="row row-cols-1 row-cols-md-4 g-3 pb-3 container mx-auto">    
-                    {
-                        courses.map(course =><Course id={course.id} course={course}></Course>)
-                    }
-                    
-                </div>
-                
-             </div>
-             
-        
+            <div>
+            <Row>
+            <Col>
+               <img className="pt-5" src="https://cdni.iconscout.com/illustration/premium/thumb/mental-exercise-3488549-2922403.png" alt/>
+                </Col>
+                <Col className="pb-5 text-start me-5 mb-4">
+                <h4 className="about-hader-text">Benefits of regular physical activity!!!</h4>
+                <p>Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently. And when your heart and lung health improve, you have more energy to tackle daily chores.</p>
+                <p>Winded by grocery shopping or household chores? Regular physical activity can improve your muscle strength and boost your endurance.</p>
+                <button className="btn btn-warning rounded-pill px-5 fw-bold">See More</button>
+
+           
+                </Col>
+            </Row>
+            </div>
+        </div>
             
         </div>
     );
