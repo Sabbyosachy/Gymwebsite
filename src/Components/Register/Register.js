@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import useFirebase from '../../Hooks/useFirebase';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
+//New user create an account setting by using password and email
 const Register = () => {
     const auth = getAuth();
     const{user,SignInUsingGoogle}=useFirebase();
@@ -10,7 +11,8 @@ const Register = () => {
     const[use,setUse]=useState({});
     const[pass,setPass]=useState('');
     const[error,setError]=useState('');
-    
+   
+    //Email verification 
     const handleRegistration=event=>{
         event.preventDefault();
         console.log(email,pass);

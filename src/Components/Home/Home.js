@@ -2,26 +2,25 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import { Carousel, Col, Row } from 'react-bootstrap';
-import Button from '@restart/ui/esm/Button';
 import Course from '../Course/Course';
 
 
 //data fetch and state create
 const Home = () => {
-    const [courses, setCourses] = useState([]);
-    useEffect(()=>{
-        fetch('Homepagedata.json')
-        .then(res => res.json())
-        .then(data => setCourses(data));
-    }, []);
-    
-    //card create dynamically value set.
+  const [courses, setCourses] = useState([]);
+  useEffect(()=>{
+      fetch('./Fakedata.json')
+      .then(res=>res.json())
+      .then(data => setCourses(data));
+  },[])
    
     return (
         <div>
         <div>
-        
-        <Carousel>
+
+ {/* Carosel add         */}
+
+<Carousel>
   <Carousel.Item>
     <img
       className="d-block w-100"
@@ -58,25 +57,19 @@ const Home = () => {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-        </div>
-             <h2 className=" pt-5 services-title fw-bold">Learn New</h2>
-             <div>
-            <div>
-            <Row>
-            <Col>
-               <img className="pt-5" src="https://cdni.iconscout.com/illustration/premium/thumb/mental-exercise-3488549-2922403.png" alt/>
-                </Col>
-                <Col className="pb-5 text-start me-5 mb-4">
-                <h4 className="about-hader-text">Benefits of regular physical activity!!!</h4>
-                <p>Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently. And when your heart and lung health improve, you have more energy to tackle daily chores.</p>
-                <p>Winded by grocery shopping or household chores? Regular physical activity can improve your muscle strength and boost your endurance.</p>
-                <button className="btn btn-warning rounded-pill px-5 fw-bold">See More</button>
 
-           
-                </Col>
-            </Row>
-            </div>
+{/* All servoce shows  */}
+
         </div>
+        <div className="py-5">
+            <h1 className="ourcourses pt-5"> All Services</h1>
+            <h6 className="subtitle">Make Your Body Fit</h6>
+        </div>
+        <div className="row row-cols-1 row-cols-md-3 g-4 p-5 container mx-auto">
+                    {
+                        courses.map(course =><Course id={courses.id} course={course}></Course>)
+                    }
+                </div>
             
         </div>
     );

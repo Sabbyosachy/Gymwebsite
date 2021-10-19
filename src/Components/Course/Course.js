@@ -1,8 +1,11 @@
 import React from 'react';
 import { Card, CardGroup } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
+//data set dynimaccly 
 
 const Course = (props) => {
-  const{coursetitle,image,fee,description}=props.course;
+  const{id,coursetitle,For,image,fee,description}=props.course;
     return (
         <div>
            <div>
@@ -14,12 +17,12 @@ const Course = (props) => {
                         <Card.Text>
                             {description}
                         </Card.Text>
+                        <p>Gender : {For}</p>
                         <h4>Fee:{fee}</h4>
-                        <button className="btn btn-warning rounded-pill px-5 fw-bold">Learn More</button>
-                    </Card.Body>
-              
-                        
-                
+                        <Link to={`/service/${id}`}>
+                        <button className="btn btn-warning rounded-pill px-5 fw-bold"><i class="fas fa-user"></i> Join {coursetitle.toLowerCase()}</button>
+                        </Link>
+                    </Card.Body>                
                 
                 </Card>
             </CardGroup>

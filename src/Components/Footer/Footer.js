@@ -26,7 +26,10 @@ const Footer = () => {
                 <p className="mt-2">Copywrite © 2021 Center of Strength</p>
               </div>
             </div>
-            <div className="col-md-2">
+            
+            {/* Middle section  */}
+           
+            <div className="col-md-2 col-2">
               <div className="menu-container">
               
                   <p className="menu">Home</p>
@@ -36,7 +39,9 @@ const Footer = () => {
                   
               </div>
             </div>
-            <div className="col-md-5">
+            {/* Right section  */}
+
+            <div className="col-md-5 col-10">
               <div className="text-start ms-5 ps-5 iteams">
               <p><i className="fas fa-map-marker-alt"></i>  New York,US</p>
              <p> <i className="fas fa-envelope"></i> Center of Strength@example.com</p>

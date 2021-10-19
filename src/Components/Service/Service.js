@@ -1,28 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import Course from '../Course/Course';
+
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
 import './Service.css';
 
-
-//fetch data set state and show data from json dynmically
 const Service = () => {
-    const [courses, setCourses] = useState([]);
+    const{courseId}=useParams();
+    const [service, setService] = useState([]);
+    const [filtered, setFiltered] = useState({});
+    // load service data
     useEffect(()=>{
-        fetch('./Fakedata.json')
-        .then(res=>res.json())
-        .then(data => setCourses(data));
+        fetch('/Fakedata.json')
+        .then(res=> res.json())
+        .then(data=>setService(data));
     },[])
+    useEffect(()=>{
+      setFiltered(service.find(item => item.id === parseInt(courseId)))
+  },[service]);
+
     return (
         <div>
-        <div>
-            <h1 className="ourcourses pt-5"> All Services</h1>
-            <h6 className="subtitle">Make Your Body Fit</h6>
-        </div>
-        <div className="row row-cols-1 row-cols-md-3 g-4 p-5 container mx-auto">
-                    {
-                        courses.map(course =><Course id={courses.id} course={course}></Course>)
-                    }
-                </div>
-            
+          <h1>{courseId}</h1>
+          <h1>{filtered?.name}</h1>
+            <p>{filtered?.description}</p> 
+         
         </div>
     );
 };

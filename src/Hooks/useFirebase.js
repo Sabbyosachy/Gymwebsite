@@ -8,19 +8,24 @@ const auth = getAuth();
 
 const useFirebase=()=>{
 const[user,setUser]=useState({});
+const[isLoading,setIsLoading]=useState(true);
 const GoogleProvider= new GoogleAuthProvider();
 
    const SignInUsingGoogle=()=>{
+      setIsLoading(true);
     signInWithPopup(auth, GoogleProvider)
     .then((result) => {
         console.log(result.user);
       })
+      .finally(()=> setIsLoading(false));
    }
 
    const logOut=()=>{
+      setIsLoading(true);
     signOut(auth).then(() => {
         setUser({});
       })
+      .finally(()=> setIsLoading(false));
    }
 //Observe auth state
    useEffect(()=>{
@@ -28,6 +33,7 @@ const GoogleProvider= new GoogleAuthProvider();
         if (user) {
           setUser(user);
         }
+        setIsLoading(false);
       });
       
    },[])
@@ -35,6 +41,7 @@ const GoogleProvider= new GoogleAuthProvider();
    return {
        user,
        logOut,
+       isLoading,
        SignInUsingGoogle
    }
   

@@ -20,6 +20,7 @@ const Navbar = () => {
     <Nav className="navlinks">
         <NavLink className="home" to="/">Home</NavLink>
         <NavLink className="service" to="/service">Service</NavLink>
+        <NavLink className="service" to="/details">Details</NavLink>
         <NavLink className="aboutus" to="/aboutus">About us</NavLink>
         {user.email && <span className="text-light mt-2 me-2">{user.displayName} </span>}
         {
