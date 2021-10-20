@@ -34,8 +34,8 @@ const useFirebase = () => {
 // form handler
     const handleSubmit = event =>{
         event.preventDefault();
-        if(password.length < 8){
-            setError("Password Must be at least 8 characters long.");
+        if(password.length < 6){
+            setError("Password Must be at least 6 characters long.");
             return;
         }
 
