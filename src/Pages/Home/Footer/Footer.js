@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="copyright text-white  justify-around p-5">
-                <p>Copyright &copy; 2021 center of strength</p>
+                <p className="ml-14">Copyright &copy; 2021 center of strength</p>
             </div>
             
            
