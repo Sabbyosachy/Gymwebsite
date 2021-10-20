@@ -1,17 +1,14 @@
-# Center of Strength
+# MediWise
 
-Please visit the link. [Center of Strength](https://musing-jang-7eb9d2.netlify.app/)
+To view this project click on it [Mediwise](https://medi-wise.netlify.app/).
 
-Hello,Everyone welcome to Center of Strength GYM center here are different type of services are available for all ages and all genders here you can know about important of GYM and Fitness you can also know how to do properly exersise with eqiupments and without equipments.
+•	This project is built by react, tailwind CSS, firebase, react-leaflet, react router.
 
-•	This project Use To Make React, React Router, React Bootstrap, React Rating.
+•	You can create an account via Gmail or using your email.
 
-•	Here use caurosel login/create account and logout option.
+•	You can take medical service by login to this website.
 
-•	There are login,logout and create option are available.
+•	By leaflet (Map) you can assume how far you are away from our Mediwise.
 
-•	Private Route are implemented for service whenever click in the buttons.
+•	You can set an appointment with our specialist by go to Appointment page.
 
-•	Several Component is using to build this project.
-
-•	This project is a gym fitness health care website.

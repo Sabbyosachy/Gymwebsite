@@ -1,0 +1,39 @@
+/* doctors container style */
+.person {
+  text-align: center;
+  margin: 40px 0;
+}
+.person h1 {
+  color:black;
+  font-weight: 700;
+  margin: 30px 0;
+  font-size: 40px;
+}
+
+
+.person__container {
+  width: 80%;
+  margin: 0 auto;
+  
+}
+.card{
+  background-color:#e5f9fc;
+}
+.person_info {
+  margin: 0 auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.212);
+  transition: 0.5s;
+  margin-bottom: 50px;
+}
+.person_info img{
+  padding: 15px;
+}
+.person_info h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color:black;
+}
+.person_info span {
+  font-size: 20px;
+  font-weight: 500;
+}
