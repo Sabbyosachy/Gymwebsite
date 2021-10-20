@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Banner.css";
 
+//banner handing text and button
 const Banner = () => {
     return (
         <div className="banner">

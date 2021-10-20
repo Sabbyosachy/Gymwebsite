@@ -2,11 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Footer.css";
 
+
 const Footer = () => {
     return (
         <>
             <div className="footer gap-4 text-white grid items-center md:grid-cols-4 sm:grid-cols-2">
             <div>
+                {/* Footer left section  */}
                     <h2>Contacts</h2>
                     <ul>
                         <li><i className="fas fa-map-marker-alt"></i>New York,US</li>
@@ -16,6 +18,8 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
+                    {/* footer middle section  */}
+
                     <h2>About</h2>
                     <ul>
                         <li>Trainers</li>
@@ -34,6 +38,8 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
+                    {/* footer right section  */}
+
                     <h2>Branches</h2>
                     <ul>
                         <li>Los Angeles</li>
@@ -43,6 +49,9 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
+
+            {/* Copywerite  */}
+            
             <div className="copyright text-white  justify-around p-5">
                 <p className="ml-14">Copyright &copy; 2021 center of strength</p>
             </div>

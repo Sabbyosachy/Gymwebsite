@@ -10,6 +10,8 @@ const AllTrainers = () => {
         .then(res=>res.json())
         .then(data => setTrainers(data));
     },[])
+    
+    //trainers show by fetrching data 
     return (
         <div className="person">
             <h1 className>Our Trainers</h1>
