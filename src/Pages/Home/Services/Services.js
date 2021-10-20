@@ -16,7 +16,7 @@ const Services = () => {
             <h1>All Available Services</h1>
             <span>Choose Your Services</span>
             {/* show all services */}
-            <div className="grid md:grid-cols-2 sm:grid-cols-1 show__item">
+            <div className="grid md:grid-cols-3 sm:grid-cols-1 show__item">
                 {
                     services.map(service=>
                         <div className="service m-10" key={service.id}>

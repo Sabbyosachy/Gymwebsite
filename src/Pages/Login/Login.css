@@ -10,12 +10,12 @@
 .login input {
   padding: 7px;
   margin: 10px 0;
-  border: 1px solid gray;
+
 }
 
 /* button style */
 .btn__login {
-  background-color: #20bdd1;
+  background-color: #02123a;
   color: white;
   font-weight: 500;
   width: 200px;
@@ -23,8 +23,4 @@
   object-fit: contain;
   transition: 0.5s;
   margin: 7px 0;
-}
-.btn__login:hover {
-  color: #fff;
-  background-color: #02123a;
 }

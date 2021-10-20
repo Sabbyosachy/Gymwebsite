@@ -6,7 +6,8 @@
 .person h1 {
   color:black;
   font-weight: 700;
-  margin: 30px 0;
+  margin: 5px 0;
+  margin-top: 20px;
   font-size: 40px;
 }
 
@@ -16,11 +17,17 @@
   margin: 0 auto;
   
 }
+.person span{
+  color: orangered;
+  font-weight: 700;
+  font-size: 15px;
+}
 .card{
   background-color:#e5f9fc;
 }
 .person_info {
   margin: 0 auto;
+  margin-top: 60px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.212);
   transition: 0.5s;
   margin-bottom: 50px;

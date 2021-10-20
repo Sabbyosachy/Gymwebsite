@@ -6,9 +6,9 @@
 }
 
 .services span {
-  color: #20bdd1;
-  font-weight: 500;
-  font-size: 25px;
+  color:orangered;
+  font-weight: 700;
+  font-size: 15px;
 }
 .iteams{
 text-align: center;
@@ -17,12 +17,13 @@ text-align: center;
 .services h1 {
   color:black;
   font-weight: 700;
-  margin: 35px 0;
+  margin: 5px 0;
+  margin-top: 30px;
   font-size: 40px;
 }
 .show__item {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   text-align: left;
 }
 .service {

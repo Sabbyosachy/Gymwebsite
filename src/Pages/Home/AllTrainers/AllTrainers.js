@@ -13,6 +13,7 @@ const AllTrainers = () => {
     return (
         <div className="person">
             <h1 className>Our Trainers</h1>
+            <span>Choose Your Trainer</span>
          
             <div className="grid md:grid-cols-2 sm:grid-cols-1 person__container">
                 {

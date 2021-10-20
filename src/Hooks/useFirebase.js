@@ -10,6 +10,7 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [isLogin, setIsLogin] = useState(false);
     const [email, setEmail] = useState('');
+    const[isLoading,setIsLoading]=useState(true);
     const [name, setName] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -17,22 +18,22 @@ const useFirebase = () => {
         return signInWithPopup(auth, googleProvider);
     }
 // check if login or not
-    const checkedIsLogin = e =>{
-        setIsLogin(e.target.checked);
+    const checkedIsLogin = event =>{
+        setIsLogin(event.target.checked);
     }
 
-    const handleEmailChange = e => {
-        setEmail(e.target.value);
+    const handleEmailChange = event => {
+        setEmail(event.target.value);
     }
-    const handlePasswordChange = e => {
-        setPassword(e.target.value);
+    const handlePasswordChange = event => {
+        setPassword(event.target.value);
     }
-    const handleNameChange = e => {
-        setName(e.target.value);
+    const handleNameChange = event => {
+        setName(event.target.value);
     }
 // form handler
-    const handleSubmit = e =>{
-        e.preventDefault();
+    const handleSubmit = event =>{
+        event.preventDefault();
         if(password.length < 8){
             setError("Password Must be at least 8 characters long.");
             return;
@@ -40,7 +41,7 @@ const useFirebase = () => {
 
         isLogin? processToLogin(email, password): processToRegister(email,password);
     }
-// register function
+// register
     const processToRegister = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
         .then((result) => {
@@ -81,6 +82,7 @@ const useFirebase = () => {
             else{
                 setUser({});
             }
+            setIsLoading(false);
         });
         return () => unsubscribed;
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -92,21 +94,22 @@ const useFirebase = () => {
         console.log(result);
       })
     };
-// forget password or reset password
+// forget /reset password
     const handleResetPass = () => {
       sendPasswordResetEmail(auth, email)
       .then(result=>{
         console.log(result);
       })
     }
-// logout function
+// logout 
     const logOut = () =>{
+        setIsLoading(true);
         signOut(auth).then(() => {
-            // Sign-out successful.
-          }).catch((error) => {
-            // An error happened.
-          });
+           
+          })
+          .finally(()=>setIsLoading(false));
     }
+    //retirn 
     return {
         signInUsingGoogle,
         logOut,
@@ -122,7 +125,9 @@ const useFirebase = () => {
         setError,
         email,
         name,
-        error
+        error,
+        isLoading,
+        setIsLoading
     }
 }
 

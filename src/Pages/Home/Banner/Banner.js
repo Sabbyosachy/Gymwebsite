@@ -7,7 +7,8 @@ const Banner = () => {
             <div className="title">
                <h1>Center Of Strength <br /> GYM</h1>
                <p className="subtitle">In Home, Outdoors & Online</p>
-                <button className="btn__regular mx-auto">
+               <br />
+                <button className="btn__regular mx-auto text-xl">
                     Book A Trail Sesson
                 </button>
             </div>
