@@ -7,7 +7,8 @@ import useAuth from '../../../hooks/useAuth';
 const PrivateRoute = ({children, ...rest}) => {
     const {user,isLoading} = useAuth();
     if(isLoading){
-        return  <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24"></svg>
+        return <h1 className="text-red-600 text-center font-medium pb-5">Loading.........</h1>;
+     
     }
     return (
         <div>

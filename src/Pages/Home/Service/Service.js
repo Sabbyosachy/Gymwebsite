@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import "./Service.css";
 
 const Service = () => {
@@ -29,8 +30,10 @@ const Service = () => {
             </div>
             <h1>{select?.name}</h1>
             <p>{select?.description}</p>
-            <h6>{select?.For}</h6>
-            <h6>{select?.fee}</h6>
+            <h6>Gender: {select?.For}</h6>
+            <h6>Fee: {select?.fee}</h6>
+            <br />
+            <Link to="/home"><button className="btn__regular">Go to Home</button></Link>
         </div>
     );
 };

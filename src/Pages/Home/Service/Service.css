@@ -12,13 +12,14 @@
   width: 100%;
 }
 .service__container h1 {
-  color: #289acd;
+  color: orangered;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   margin: 10px 0;
 }
 
 .service__container p {
-  font-size: 20px;
+  font-size: 15px;
+  padding:0px 50px;
   line-height: 50px;
 }
