@@ -4,7 +4,7 @@ import useAuth from '../../hooks/useAuth';
 import "./Login.css";
 
 const Login = () => {
-    const {handleSubmit, isLogin,isLoading,setIsLoading, handleEmailChange, handlePasswordChange, handleNameChange, checkedIsLogin, signInUsingGoogle, handleResetPass, error, setUser} = useAuth();
+    const {handleSubmit, isLogin,setIsLoading, handleEmailChange, handlePasswordChange, handleNameChange, checkedIsLogin, signInUsingGoogle, handleResetPass, error, setUser} = useAuth();
     const location = useLocation();
     const history = useHistory();
     // handle redirecting using google login
@@ -18,7 +18,8 @@ const Login = () => {
           })
           .finally(()=>setIsLoading(false));
     }
-
+    
+//handle event in input and button
     return (
         <div className="login">
             <form onSubmit={handleSubmit}>

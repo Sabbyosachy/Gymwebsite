@@ -1,7 +1,7 @@
 
 # Center of Strength
 
-Please visit the link. [Center of Strength](https://musing-jang-7eb9d2.netlify.app/)
+Please visit the link. [Center of Strength](https://boring-clarke-9e4874.netlify.app/)
 
 Hello,Everyone welcome to Center of Strength GYM center here are different type of services are available for all ages and all genders here you can know about important of GYM and Fitness you can also know how to do properly exersise with eqiupments and without equipments.
 
