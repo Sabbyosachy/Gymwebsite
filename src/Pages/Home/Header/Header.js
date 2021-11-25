@@ -23,10 +23,13 @@ const Header = () => {
                     <HashLink to="/home#services">Services</HashLink>
                 </li>
                 <li className="mr-6">
+                    <HashLink to="/home#chooseus">Choose us</HashLink>
+                </li>
+                <li className="mr-6">
                     <Link to="/trainer">Trainer</Link>
                 </li>
                 <li className="mr-6">
-                    <Link to="/joinnow">Join Now</Link>
+                    <Link to="/joinnow">From Filup</Link>
                 </li>
                 </ul>
             </div>

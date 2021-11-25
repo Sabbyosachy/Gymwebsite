@@ -26,12 +26,10 @@ const Services = () => {
                             <div className="iteams">
                                 <h4>{service.name}</h4>
                                 <p>{service.description}</p>
-                                <br />
                                 <h6>Gender: {service.For}</h6>
                                 <h6>Fee: {service.fee}</h6>
                                 <Link to ={`services/${service.id}`}>
-                                    <br />
-                                    <button className="btn__regular">Learn More</button>
+                                    <button className="btn__regular mt-3 mb-3">Book Now</button>
                                 </Link>
                             </div>
                         </div>

@@ -4,7 +4,6 @@
   min-height: 80vh;
   padding-top: 40px;
 }
-
 .services span {
   color:orangered;
   font-weight: 700;
@@ -40,6 +39,7 @@ text-align: center;
   color: black;
   font-weight: 700;
   font-size: 30px;
+  text-align: center;
 }
 .services p {
   font-weight: 500;
