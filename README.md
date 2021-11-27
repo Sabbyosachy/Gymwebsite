@@ -7,6 +7,12 @@ Hello,Everyone welcome to Center of Strength GYM center here are different type 
 
 •	This project Use To Make React, React Router, React Bootstrap, React Rating.
 
+•	Gym-related website users can order for any kind of service and that goes to another page where the details are shown.
+
+•	If a user wants to order any product he/she has to log in and take personal details. 
+
+•	Users can login/register or logout 
+
 •	Here use caurosel login/create account and logout option.
 
 •	There are login,logout and create option are available.
