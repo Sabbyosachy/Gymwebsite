@@ -11,7 +11,7 @@ Hello,Everyone welcome to Center of Strength GYM center here are different type 
 
 •	Login and Google authentication are implemented.
 
-•	This project Use To Make React, React Router, React Bootstrap, React Rating.
+•	This project Use To Make React, React Router, Tailwind, React Rating.
 
 •	Gym-related website users can order for any kind of service and that goes to another page where the details are shown.
 
